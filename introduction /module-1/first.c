@@ -1,7 +1,13 @@
 #include<stdio.h>
+#include<stdbool.h>
 int main()
 {
-    printf("hello\t");
-    printf("wor\nld");
+    int num1 = 20;
+
+   printf("%d", num1 );
+   printf("%d", num1);
+
+
+    // printf("wor\nld");
     return 0;
 }
