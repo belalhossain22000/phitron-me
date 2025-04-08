@@ -7,7 +7,7 @@ int main (){
     scanf("%d", &tk);
 
     if(tk >= 100){
-        printf("burger khabo\n");
+        printf("burger ksdfghabo\n");
     } else {
         printf("burger khabo na\n");
     }
