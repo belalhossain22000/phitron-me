@@ -192,16 +192,16 @@
 //     return 0;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
+// int main()
+// {
 
-    int a, b, c, d;
-    scanf("%d %d %d %d", &a, &b, &c, &d);
+//     int a, b, c, d;
+//     scanf("%d %d %d %d", &a, &b, &c, &d);
 
-    long long x = 1LL * a * b - 1LL * c * d;
-    printf("Difference = %lld", x);
+//     long long x = 1LL * a * b - 1LL * c * d;
+//     printf("Difference = %lld", x);
 
-    return 0;
-}
+//     return 0;
+// }
