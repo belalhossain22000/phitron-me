@@ -152,15 +152,13 @@
 //             continue;
 //         }
 
-//         int digits[10]; 
+//         int digits[10];
 //         int count = 0;
-
 
 //         for (; n != 0; n /= 10)
 //         {
 //             digits[count++] = n % 10;
 //         }
-
 
 //         for (int j = 0; j < count; j++)
 //         {
@@ -174,21 +172,50 @@
 //     return 0;
 // }
 
+// problem link: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K
 
-//problem link: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K
+// #include <stdio.h>
+
+// int main() {
+
+//     int n;
+
+//     scanf("%d",&n);
+//    for (int i =1;i<=n;i++){
+//     if(n%i==0){
+//         printf("%d\n",i);
+//     }
+//    }
+
+//     return 0;
+// }
+
+
+
 
 #include <stdio.h>
 
-int main() {
-    
-    int n;
+int main()
+{
 
-    scanf("%d",&n);
-   for (int i =1;i<=n;i++){
-    if(n%i==0){
-        printf("%d\n",i);
+    int t;
+    scanf("%d", &t);
+
+    for (int i = 1; i <= t; i++)
+    {
+        int x = 0;
+        int y = 0;
+        scanf("%d",&x);
+        scanf("%d",&y);
+        if (x < y)
+        {
+            int temp = x + 1;
+            if (temp % 2 == 1)
+            {
+                printf("%d", temp);
+            }
+        }
     }
-   }
-    
+
     return 0;
 }
