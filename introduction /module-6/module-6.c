@@ -134,42 +134,61 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int t;
+//     scanf("%d", &t);
+
+//     for (int i = 1; i <= t; i++)
+//     {
+//         int n;
+//         scanf("%d", &n);
+
+//         if (n == 0)
+//         {
+//             printf("0\n");
+//             continue;
+//         }
+
+//         int digits[10]; 
+//         int count = 0;
+
+
+//         for (; n != 0; n /= 10)
+//         {
+//             digits[count++] = n % 10;
+//         }
+
+
+//         for (int j = 0; j < count; j++)
+//         {
+//             if (j > 0)
+//                 printf(" ");
+//             printf("%d", digits[j]);
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+
+//problem link: https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K
+
 #include <stdio.h>
 
-int main()
-{
-    int t;
-    scanf("%d", &t);
+int main() {
+    
+    int n;
 
-    for (int i = 1; i <= t; i++)
-    {
-        int n;
-        scanf("%d", &n);
-
-        if (n == 0)
-        {
-            printf("0\n");
-            continue;
-        }
-
-        int digits[10]; 
-        int count = 0;
-
-       
-        for (; n != 0; n /= 10)
-        {
-            digits[count++] = n % 10;
-        }
-
-       
-        for (int j = 0; j < count; j++)
-        {
-            if (j > 0)
-                printf(" ");
-            printf("%d", digits[j]);
-        }
-        printf("\n");
+    scanf("%d",&n);
+   for (int i =1;i<=n;i++){
+    if(n%i==0){
+        printf("%d\n",i);
     }
-
+   }
+    
     return 0;
 }
